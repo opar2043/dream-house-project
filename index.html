@@ -28,81 +28,76 @@
    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-[#f5f3f3]">
 
-   <header class=" bg-gradient-to-r [#FFFFFF] ">
+   <header class=" bg-[#f5f3f3]">
     <div class="w-11/12 mx-auto">
-        <div class="navbar bg-base-100 flex">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
-                </div>
-                <div class="flex justify-center items-center gap-2 border">
-                    <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-0.5"></i>
-                    <h2 class="text-2xl font-bold text-[#212121]">Rinterio</h2>
-                </div>
-                
-              </div>
-              
-            </div>
-            <div class="navbar-center hidden lg:flex ">
-              <ul class="menu menu-horizontal px-1">
-                <li><a class="text[#737373] font-bold">Home</a></li>
-                <li><a class="text[#737373] ">Services</a></li>
-                <li><a class="text[#737373] ">Portfolio</a></li>
-                <li><a class="text[#737373] ">Blogs</a></li>
-                <li><a class="text[#737373] ">Contact Us</a></li>                
-              </ul>
-            </div>
-                <div class="hidden md:flex justify-center gap-5 align-middle w-1/5">
-                    <i class="fa-solid fa-magnifying-glass border rounded-full bg-white text-md p-1 text-[#737373]"></i>
-                    <button class="flex justify-center items-center gap-5 border bg-[#ABEF5F] rounded-3xl px-6 py-2 font-bold">
-                        Book Consult
-                    <i class="fa-solid fa-arrow-right -rotate-45  bg-black text-white rounded-full p-0.5 "></i>
-                    </button>
-                </div>
-            
-        </div>
+      <div class="flex justify-between items-center py-5">
+          <div>
+                <button class="flex gap-3 text-2xl justify-center items-center font-bold rounded-full px-1 py-2 ">
+                  <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-1"></i>
+                  Rinterio
+                </button>
+          </div>
 
+          <div class="">
+                  <ul class="md:flex justify-between gap-6 pt-1 hidden">
+                     <li class="font-semibold hover:bg-slate-200 rounded p-1">Home</li>
+                     <li class="hover:bg-slate-200 rounded text-[#737373] p-1">Portfolio</li>
+                     <li class="hover:bg-slate-200 rounded text-[#737373] p-1">Services</li>
+                     <li class="hover:bg-slate-200 rounded text-[#737373] p-1">Blogs</li>
+                     <li class="hover:bg-slate-200 rounded text-[#737373] p-1">Contuct Us</li>
+                  </ul>
+          </div>
+
+          <div class="hidden lg:flex gap-5 justify-center items-center">
+            <a href="">
+            <i class="fa-solid fa-magnifying-glass text-[#737373] rounded-full p-2 bg-[#FFF] "></i>
+            </a>
+            <a href="">
+              <i class="fa-solid fa-cart-shopping text-[#737373] p-2 bg-[#FFF] rounded-full"></i>
+            </a>
+            <button class="flex gap-3 text-xl px-4 py-1 justify-center items-center font-bold bg-[#ABEF5F] rounded-full hover:bg-[#a1d663]">
+              Book Consult
+              <i class="fa-solid fa-arrow-right -rotate-45 bg-black rounded-full p-0.5 text-white"></i>    
+            </button>
+          </div>
+          <div class="p-2 bg-[#FFF] rounded-full text-center bottom-2 md:hidden">
+            <i class="fa-solid fa-bars text-[#737373] font-semibold text-xl"></i>
+          </div>
+      </div>
 
         <div class="flex flex-col text-center justify-center items-center gap-6 py-10">
-            <div>
-                <img src="assets/banner.png" class="w-5/6">
+            <div class="r">
+                <img src="assets/banner.png" class="w-5/6 mx-auto">
             </div>
-            <div class="flex flex-col gap-6">
+            <div class=" flex flex-col gap-6">
                 <h2 class="lg:text-5xl md-text-4xl text-2xl font-extrabold leading-10 ">A barn house of this design has a <br> striking appearance</h2>
                 <p class="w-full md:w-5/6 text-center mx-auto text-[#494949] text-sm leading-6">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
             </div>
-            <div >
-            <button class="flex justify-center items-center gap-5 border bg-[#ABEF5F80]  rounded-3xl px-6 py-2 font-bold ">
-                    View Details
-                <i class="fa-solid fa-arrow-right -rotate-45  bg-[#ABEF5F] text-[#212121] rounded-full p-0.5 "></i>
-                </button>
-            </div>
+           
+        </div>
+        <div class=" flex justify-center">
+          <button class="flex gap-3 text-xl px-4 py-1 justify-center items-center font-bold bg-[#acef5f83] rounded-full hover:bg-[#c1ec8f]">
+            View Details
+            <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] text-black rounded-full p-0.5 "></i>    
+          </button>
         </div>
     </div>
-
-    
    </header>
-
+          <!-- Hero Area -->
    <div class="hero bg-base-200 min-h-screen">
     <div class="hero-content md:w-11/12 mx-auto flex-col lg:flex-row-reverse lg:justify-between border">
 
-      <div class="w-full lg:w-[50%]">
+      <div class="w-full lg:w-[50%] ">
         <img src="assets/Rectangle.png"  class="w-5/6 rounded-lg shadow-2x mx-auto">
       </div>
+
+      <!-- social area-========== -->
+
+
+
+      <!-- concept area============================ -->
 
         <div class="grid grid-cols-1 gap-5 text-center md:text-left w-full lg:w-[50%]">
           <div class="p-5 text-center lg:text-left">
@@ -140,7 +135,39 @@
           
      </div>
     </div>
+
+    <div class="w-11/12 mx-auto bg-white rounded-3xl p-8">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center">
+        <div class="flex flex-col gap-2 justify-center text-[#737373] py-2 px-3 text-center">
+          <i class="fa-regular fa-message text-lg "></i>
+          <h2 class="text-2xl font-bold text-[#494949]">235+</h2>
+          <p class="text-sm">Happy Client Review</p>
+        </div>
+
+        <div class="flex flex-col gap-2 justify-center text-[#737373] py-2 px-3 text-center">
+          <i class="fa-regular fa-comment-dots text-lg"></i>
+          <h2 class="text-2xl font-bold text-[#494949]">50+</h2>
+          <p class="text-sm">Work Departments</p>
+        </div>
+
+        <div class="flex flex-col gap-2 justify-center text-[#737373] py-2 px-3 text-center">
+          <i class="fa-solid fa-comment text-lg"></i>
+          <h2 class="text-2xl font-bold text-[#494949]">30k+</h2>
+          <p class="text-sm">Our Happy Client</p>
+        </div>
+
+        <div class="flex flex-col gap-2 justify-center text-[#737373] py-2 px-3 text-center">
+          <i class="fa-solid fa-person text-3xl"></i>
+          <h2 class="text-2xl font-bold text-[#494949]">307+</h2>
+          <p class="text-sm">Staff Members</p>
+        </div>
+        
+      </div>
+
+    </div>
    
+    <!--  -->
     <div class="bg-[rgba(30,30,30,0.1)]">
       <div class="w-11/12 mx-auto py-6 md:py-16  md:px-6">
         <div class="flex flex-col justify-center items-center gap-3">
@@ -153,7 +180,7 @@
   
         <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-5 py-7">
   
-          <div class="flex flex-col gap-3 md:p-4 bg-[#E7C1D3] rounded-lg shadow-md text-left">
+          <div class="flex flex-col gap-3 p-4 bg-[#E7C1D3] rounded-lg shadow-md text-left">
             <div>
               <img src="assets/concept.png" class="">
             </div>
@@ -231,7 +258,6 @@
    </div>
 
   <!-- card section -->
-
   <div class="bg-[rgba(30,30,30,0.1)]">
     <div class="w-11/12 mx-auto border py-6 md:py-16 px-2 md:px-6">
       <div class="flex flex-col justify-center items-center gap-3">
@@ -278,6 +304,38 @@
   </div>
 
   <!-- input section -->
+   <div class="lg:w-5/6 w-11/12 mx-auto lg:p-9 px-2 py-8">
+    <div class="flex flex-col justify-center items-center gap-3">
+      <div class="">
+        <button class="py-2 px-6 text-sm flex gap-1 items-center bg-[#ABEF5F33] hover:bg-green-200 rounded-2xl font-semibold"><i class="fa-solid fa-arrow-right"></i>Lets Contuct</button>
+      </div>
+      <h2 class="lg:text-3xl md:text-2xl text-xl font-bold pb-3 ">Let’s Discuss Next Project</h2>
+      <p class="text-sm text-center">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+    </div>
+
+    <div class=" grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-6 grid-rows-8 gap-3
+      lg:mx-auto py-6">
+      <div >
+        <input type="text" placeholder="Frist Name" class=" p-3 bg-white rounded-2xl text-sm shadow outline-0 w-full ">
+      </div>
+      <div >
+        <input type="text" placeholder="Last Name" class=" p-3 bg-white rounded-2xl text-sm shadow outline-0 w-full">
+      </div>
+     <div  >
+      <input type="number" placeholder="Phone Number" class=" p-3 bg-white rounded-2xl text-sm shadow outline-0 w-full">
+     </div>
+      <div  >
+        <input type="email" placeholder="Email" class="p-3 bg-white rounded-2xl text-sm shadow outline-0 w-full">
+      </div>
+    <div class="col-span-2 row-span-3">
+      <textarea name="text" id="" placeholder="Write Your Message Here" class="p-4 bg-white rounded-2xl text-sm h-full  outline-0 shadow w-full"></textarea>
+    </div>
+      <div class="col-span-2 text-center">
+        <button class="py-3 px-6 flex gap-1 items-center bg-[#ABEF5F] hover:bg-green-200 rounded-2xl font-bold mx-auto w-full justify-center"><i class="fa-solid fa-arrow-right bg-black text-white p-0.5 rounded-full -rotate-45"></i>Send Mail</button>
+      </div>   
+    </div>
+
+   </div>
 
   <!-- footer section -->
    <footer class="bg-[#1C1C1C] w-full p-10">
