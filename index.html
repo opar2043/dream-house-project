@@ -4,31 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream House</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
    <!-- tawilwind CDN -->
      <script src="https://cdn.tailwindcss.com"></script>
-        <script>
+     <script>
       tailwind.config = {
-       theme: {
-         extend: {
-           colors: {
-             clifford: '#da373d',   
-           },
-           fontFamily: {
-             Poppins: 'Poppins',
-           },
-         }
-       }
-     }
-   </script>
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            },
+            fontFamily: {
+              manrope: ["Manrope"],
+            },
+          }
+        }
+      }
+    </script>
    <!-- daiysy Ui -->
    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#f5f3f3]">
+<body class="font-manrope bg-[#f5f3f3]">
 
    <header class=" bg-[#f5f3f3]">
     <div class="w-11/12 mx-auto">
@@ -87,7 +93,7 @@
    </header>
           <!-- Hero Area -->
     <div class="hero bg-base-200 min-h-screen">
-    <div class="hero-content md:w-11/12 mx-auto flex-col lg:flex-row-reverse lg:justify-between border">
+    <div class="hero-content md:w-11/12 mx-auto flex-col lg:flex-row-reverse lg:justify-between ">
 
       <div class="w-full lg:w-[50%] ">
         <img src="assets/Rectangle.png"  class="w-5/6 rounded-lg shadow-2x mx-auto">
@@ -132,7 +138,7 @@
      </div>
     </div>
 
-    <div class="w-11/12 mx-auto bg-white rounded-3xl p-8 mb-6">
+    <div class="w-11/12 mx-auto bg-white rounded-3xl p-8 mb-6 shadow">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center ">
         <div class="flex flex-col gap-2 justify-center text-[#737373] py-2 px-3 text-center">
           <i class="fa-regular fa-message text-lg "></i>
@@ -219,7 +225,7 @@
     </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-2 gap-3 py-7 w-11/12 mx-auto ">
-        <div class="flex justify-center flex-col md:flex-row align-middle gap-4 p-2 rounded-lg border shadow lg:col-span-3 h-fit">
+        <div class="flex justify-center flex-col md:flex-row align-middle gap-4 p-2 rounded-lg  shadow lg:col-span-3 h-fit order-1">
             <div class="">
                 <img src="assets/img1.png" class="w-full md:w-[225px] md:h-[130px]">
             </div>
@@ -230,15 +236,20 @@
             </div>
         </div>
 
-        <div class="h-fit p-2 border rounded-lg shadow">
+        <div class="h-fit p-2 border rounded-lg shadow order-2">
           <img src="assets/img2.png" alt="" class="lg:w-[225px] lg:h-[130px]">
         </div>
-        <div class="h-fit p-2 border rounded-lg shadow ">
-          <img src="assets/img3.png" class=" w-full lg:w-[225px] lg:h-[130px] mx-auto">
+        <div class="h-fit p-2 border rounded-lg shadow lg:hidden order-3">
+          <img src="assets/img5.png" class="w-full lg:w-[285px] lg:h-[130px]">
         </div>
-        <div class="flex justify-center align-middle flex-col md:flex-row gap-4 p-2 rounded-lg border shadow lg:col-span-2 h-fit">
-          <div class="w-fit">
-              <img src="assets/img4.png" class="w-full md:w-[285px] md:h-[130px]">
+
+        <div class="h-fit p-2 border rounded-lg shadow lg:order-4 order-5">
+          <img src="assets/img3.png" class=" w-full lg:w-[225px] lg:h-[130px] mx-auto ">
+        </div>
+
+        <div class="flex justify-center align-middle flex-col md:flex-row gap-4 p-2 rounded-lg border shadow lg:col-span-2 h-fit lg:order-5 order-4">
+          <div class="w-fit ">
+              <img src="assets/img4.png" class="w-[320px] md:w-[285px] md:h-[130px] ">
           </div>
           <div class="flex flex-col justify-start gap-3 lg:pr-3 ">
             <h2 class=" text-[#494949] font-bold ">Commercial</h2>
@@ -246,7 +257,7 @@
             <a href="" class="font-bold text-sm text-black">View Details<i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-1 ml-1"></i></a>
           </div>
       </div>
-      <div class="h-fit p-2 border rounded-lg shadow ">
+      <div class="h-fit p-2 border rounded-lg shadow order-6">
         <img src="assets/img5.png" class="w-full lg:w-[285px] lg:h-[130px]">
       </div>
     </div>
@@ -329,7 +340,7 @@
   </div>
 
   <!-- input section -->
-   <div class="lg:w-5/6 w-11/12 mx-auto lg:p-9 px-2 py-8">
+   <div class="lg:w-5/6 w-11/12 mx-auto lg:p-9 px-2 lg:py-8">
     <div class="flex flex-col justify-center items-center gap-3">
       <div class="">
         <button class="py-2 px-6 text-sm flex gap-1 items-center bg-[#ABEF5F33] hover:bg-green-200 rounded-2xl font-semibold"><i class="fa-solid fa-arrow-right"></i>Lets Contuct</button>
